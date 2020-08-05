@@ -1,5 +1,6 @@
 import React, { Fragment } from "react"
 import Navbar from "../inc/main/Navbar"
+import Footer from "../inc/main/Footer"
 
 const MainLayout = ({ children }) => {
   return (
@@ -9,6 +10,8 @@ const MainLayout = ({ children }) => {
       </header>
 
       {children}
+
+      <Footer />
     </Fragment>
   )
 }
