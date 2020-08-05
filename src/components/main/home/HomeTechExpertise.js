@@ -2,7 +2,7 @@ import React from "react"
 
 const TechExpertise = () => {
   return (
-    <div className='px-16 md:px-20 py-10 font-primary'>
+    <div className='px-6 md:px-24 py-10 font-primary'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         <div className=''>
           {/* Header */}

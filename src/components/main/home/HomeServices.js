@@ -4,7 +4,7 @@ import { Link } from "react-router-dom"
 const HomeServices = () => {
   return (
     <div
-      className='px-16 md:px-20 py-10 font-primary text-center'
+      className='px-6 md:px-20 py-10 font-primary text-center'
       id='home-service'
     >
       <div className='home-service-box item-1'>
