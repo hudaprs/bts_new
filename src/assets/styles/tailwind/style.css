@@ -18581,6 +18581,8 @@ body {
 
 @import "../_home.css";
 
+@import "../_mobile.css";
+
 @media (min-width: 640px) {
   .sm\:container {
     width: 100%;

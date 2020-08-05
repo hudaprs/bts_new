@@ -9,7 +9,7 @@ const Navbar = () => {
       className='w-full z-50 fixed bg-dark-with-opacity text-white text-sm font-default font-hairline'
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
-      <div className='px-20 pt-6 m-auto flex justify-between items-center'>
+      <div className='px-6 md:px-20 pt-6 m-auto flex justify-between items-center'>
         <img
           src={require("../../../assets/img/Navbar/NavbarLogo.png")}
           alt='BTS.id'

@@ -1,0 +1,40 @@
+/* Medium size */
+@media (max-width: 768px) {
+  /* Home - Services */
+  #home-service {
+    grid-template-areas:
+      "content"
+      "item-1"
+      "item-2"
+      "item-3"
+      "item-4"
+      "item-5"
+      "item-6";
+  }
+
+  #home-service .services-title {
+    margin-bottom: 40px;
+  }
+
+  #home-service .home-service-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 200px;
+    height: 150px;
+  }
+
+  #home-service .home-service-box img {
+    align-self: center;
+    margin: 0;
+    width: 60px;
+    height: 60px;
+  }
+
+  #home-service .home-service-box p {
+    font-size: 12px;
+    margin: 0;
+  }
+}

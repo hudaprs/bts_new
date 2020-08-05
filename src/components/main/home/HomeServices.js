@@ -1,15 +1,19 @@
 import React from "react"
+import { Link } from "react-router-dom"
 
 const HomeServices = () => {
   return (
-    <div className='px-20 py-10 font-primary text-center' id='home-service'>
+    <div
+      className='px-16 md:px-20 py-10 font-primary text-center'
+      id='home-service'
+    >
       <div className='home-service-box item-1'>
         <img
           src={require("../../../assets/img/Home/Services/Comperhensive.png")}
           alt='Logo1'
           className='home-service-logo'
         />
-        <p className='lead'>Comprehensive IT Manage Service</p>
+        <p>Comprehensive IT Manage Service</p>
       </div>
 
       <div className='home-service-box item-2'>
@@ -18,7 +22,7 @@ const HomeServices = () => {
           alt='Logo5'
           className='home-service-logo'
         />
-        <p className='lead'>Cloud Integration</p>
+        <p>Cloud Integration</p>
       </div>
 
       <div className='home-service-box item-3'>
@@ -27,17 +31,17 @@ const HomeServices = () => {
           alt='Logo3'
           className='home-service-logo'
         />
-        <p className='lead'>Management Consulting & Business Services</p>
+        <p>Management Consulting & Business Services</p>
       </div>
 
       <div className='services-title text-center' id='home-service-title'>
         <div>
-          <h3 className='text-4xl md:text-5xl'>
+          <h3 className='text-4xl md:text-5xl mb-4'>
             Our <strong>Services</strong>
           </h3>
-          <a href='#!' className='btn btn-primary mb-4'>
-            Know More
-          </a>
+          <Link to='#!' className='bg-primary py-3 px-5 rounded'>
+            KNOW MORE
+          </Link>
         </div>
       </div>
 
@@ -47,7 +51,7 @@ const HomeServices = () => {
           alt='Logo4'
           className='home-service-logo'
         />
-        <p className='lead'>Web & Mobile Development</p>
+        <p>Web & Mobile Development</p>
       </div>
 
       <div className='home-service-box item-5'>
@@ -56,7 +60,7 @@ const HomeServices = () => {
           alt='Logo5'
           className='home-service-logo'
         />
-        <p className='lead'>Business Intelligence, Big Data</p>
+        <p>Business Intelligence, Big Data</p>
       </div>
 
       <div className='home-service-box item-6'>
@@ -65,7 +69,7 @@ const HomeServices = () => {
           alt='Logo6'
           className='home-service-logo'
         />
-        <p className='lead'>More than What Listed</p>
+        <p>More than What Listed</p>
       </div>
     </div>
   )

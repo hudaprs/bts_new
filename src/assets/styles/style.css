@@ -43,3 +43,4 @@ body {
 
 /* Home */
 @import "../_home.css";
+@import "../_mobile.css";

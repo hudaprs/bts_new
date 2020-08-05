@@ -12,7 +12,7 @@ const HomeShowcase = () => {
     <div className='showcase font-primary text-white ' style={styles.showcase}>
       {/* Showcase Container */}
       <div
-        className='grid px-20 grid-cols-2 justify-center items-center relative'
+        className='grid px-16 md:px-20 grid-cols-2 justify-center items-center relative'
         style={{ height: "100vh" }}
       >
         {/* Showcase Content */}
@@ -55,7 +55,7 @@ const HomeShowcase = () => {
           {/* Scroll To Bottom */}
           <img
             src={MouseIcon}
-            className='absolute bottom-0'
+            className='hidden absolute bottom-0 md:block'
             style={{
               left: "50%",
               right: "25%"
