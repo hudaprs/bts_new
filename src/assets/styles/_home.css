@@ -1,0 +1,61 @@
+/* Home - Services */
+#home-service {
+  display: grid;
+  grid-template-areas:
+    "item-1 . item-4"
+    "item-2 content item-5"
+    "item-3 . item-6";
+  grid-gap: 0 50px;
+}
+
+#home-service .item-1 {
+  grid-area: item-1;
+  justify-self: center;
+}
+
+#home-service .item-2 {
+  grid-area: item-2;
+  justify-self: center;
+}
+
+#home-service .item-3 {
+  grid-area: item-3;
+  justify-self: center;
+}
+
+#home-service #home-service-title {
+  grid-area: content;
+}
+
+#home-service .item-4 {
+  grid-area: item-4;
+  justify-self: center;
+}
+
+#home-service .item-5 {
+  grid-area: item-5;
+  justify-self: center;
+}
+
+#home-service .item-6 {
+  grid-area: item-6;
+  justify-self: center;
+}
+
+#home-service .home-service-logo {
+  width: 80px;
+  height: 80px;
+  margin-left: 40px;
+}
+
+#home-service .home-service-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 3px #fff solid;
+  border-radius: 5px;
+  width: 325px;
+  height: 144px;
+  padding: 0 20px;
+  margin-bottom: 4rem;
+}
