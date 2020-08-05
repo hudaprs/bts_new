@@ -6,6 +6,7 @@ import HomeShowcase from "./HomeShowcase"
 import HomeServices from "./HomeServices"
 import HomeTechExpertise from "./HomeTechExpertise"
 import HomeCompanies from "./HomeCompanies"
+import HomeBlog from "./HomeBlog"
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <HomeServices />
       <HomeTechExpertise />
       <HomeCompanies />
+      <HomeBlog />
     </MainLayout>
   )
 }

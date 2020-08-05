@@ -39,7 +39,7 @@ const HomeServices = () => {
           <h3 className='text-4xl md:text-5xl mb-4'>
             Our <strong>Services</strong>
           </h3>
-          <Link to='#!' className='bg-primary py-3 px-5 rounded'>
+          <Link to='#!' className='btn'>
             KNOW MORE
           </Link>
         </div>

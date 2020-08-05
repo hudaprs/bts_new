@@ -3,7 +3,7 @@ import React from "react"
 const HomeCompanies = () => {
   return (
     <div className='px-6 md:px-24 text-center font-primary py-10'>
-      <h3 className='text-center text-4xl md:text-5xl mb-4'>
+      <h3 className='text-center text-2xl md:text-5xl mb-4'>
         Companies We’ve <strong>Helped</strong>
       </h3>
 

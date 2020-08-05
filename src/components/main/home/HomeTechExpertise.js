@@ -4,7 +4,7 @@ const TechExpertise = () => {
   return (
     <div className='px-6 md:px-24 py-10 font-primary'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-        <div className=''>
+        <div>
           {/* Header */}
           <div className='flex flex-col md:flex-row items-center mb-6'>
             <h3 className='text-center text-2xl md:text-5xl w-full md:w-7/12'>

@@ -41,6 +41,11 @@ body {
   );
 }
 
+/* Btn */
+.btn {
+  @apply bg-primary py-3 px-5 rounded transition ease-in duration-500;
+}
+
 /* Home */
 @import "../_home.css";
 @import "../_mobile.css";

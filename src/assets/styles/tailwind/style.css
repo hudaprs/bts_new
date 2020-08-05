@@ -18577,6 +18577,22 @@ body {
   );
 }
 
+/* Btn */
+
+.btn {
+  --bg-opacity: 1;
+  background-color: #b22026;
+  background-color: rgba(178, 32, 38, var(--bg-opacity));
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  border-radius: 0.25rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 500ms;
+}
+
 /* Home */
 
 @import "../_home.css";

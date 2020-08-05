@@ -37,4 +37,14 @@
     font-size: 12px;
     margin: 0;
   }
+
+  /* Home - Blog */
+  #blog .blog-item {
+    padding: 20px 0;
+    border-bottom: 1px #b22026 dotted;
+  }
+
+  #blog .blog-item:last-child {
+    border: none;
+  }
 }
