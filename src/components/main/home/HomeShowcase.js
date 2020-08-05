@@ -9,15 +9,16 @@ import MouseIcon from "../../../assets/img/MouseIcon.svg"
 
 const HomeShowcase = () => {
   return (
-    <div className='showcase font-primary text-white ' style={styles.showcase}>
+    <div className='showcase font-primary text-white' style={styles.showcase}>
       {/* Showcase Container */}
       <div
-        className='grid px-6 md:px-32 grid-cols-2 justify-center items-center relative'
+        className='px-6 md:px-32 flex md:grid md:grid-cols-2 justify-center items-center relative'
         style={{ height: "100vh" }}
       >
         {/* Showcase Content */}
         <div className='z-10'>
-          <h1 className='text-5xl md:text-6xl'>
+          <div className='hidden md:block w-32 bg-white h-2 border border-white mb-6'></div>
+          <h1 className='text-5xl md:text-6xl text-center md:text-left'>
             System <strong>Integrator</strong>
           </h1>
           <p className='leading-loose hidden md:block'>

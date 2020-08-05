@@ -10,11 +10,13 @@ const Navbar = () => {
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
       <div className='px-6 md:px-32 pt-6 m-auto flex justify-between items-center'>
-        <img
-          src={require("../../../assets/img/Navbar/NavbarLogo.png")}
-          alt='BTS.id'
-          style={styles.navbarLogo}
-        />
+        <Link to='/' className='cursor-pointer'>
+          <img
+            src={require("../../../assets/img/Navbar/NavbarLogo.png")}
+            alt='BTS.id'
+            style={styles.navbarLogo}
+          />
+        </Link>
 
         <div
           className='cursor-pointer md:hidden'
@@ -28,7 +30,7 @@ const Navbar = () => {
           style={toggleNav ? styles.navLinksResponsive : null}
         >
           <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
-            <Link to='#!'>Services</Link>
+            <Link to='/services'>Services</Link>
           </li>
           <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
             <Link to='#!'>Industries</Link>

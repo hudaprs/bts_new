@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useEffect } from "react"
 
 // Components
 import MainLayout from "../../layouts/MainLayout"
@@ -9,6 +9,10 @@ import HomeCompanies from "./HomeCompanies"
 import HomeBlog from "./HomeBlog"
 
 const Home = () => {
+  useEffect(() => {
+    document.title = "BTS.id - Home"
+  }, [])
+
   return (
     <MainLayout>
       <HomeShowcase />

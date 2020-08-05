@@ -81,10 +81,10 @@ const Footer = () => {
         {/* News Letter Form */}
         <div style={{ justifySelf: "center" }}>
           <h3 className='text-xl mb-4 font-bold'>News Letter</h3>
-          <form class='w-full max-w-sm'>
-            <div class='flex items-center py-2'>
+          <form className='w-full max-w-sm'>
+            <div className='flex items-center py-2'>
               <input
-                class='w-full text-gray-700 py-3 px-2 rounded-none focus:outline-none'
+                className='w-full text-gray-700 py-3 px-2 rounded-none focus:outline-none'
                 type='text'
                 placeholder='Your Email Address'
                 style={{

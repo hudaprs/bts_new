@@ -18593,6 +18593,19 @@ body {
   transition-duration: 500ms;
 }
 
+/* Card */
+
+.card {
+  --bg-opacity: 1;
+  background-color: #171717;
+  background-color: rgba(23, 23, 23, var(--bg-opacity));
+  border-radius: 0.25rem;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
 /* Home */
 
 @import "../_home.css";

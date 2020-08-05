@@ -46,6 +46,15 @@ body {
   @apply bg-primary py-3 px-5 rounded transition ease-in duration-500;
 }
 
+/* Card */
+.card {
+  @apply bg-dark rounded;
+}
+
+.card-text {
+  font-size: 13px;
+}
+
 /* Home */
 @import "../_home.css";
 @import "../_mobile.css";

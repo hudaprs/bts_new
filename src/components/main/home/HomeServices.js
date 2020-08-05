@@ -39,7 +39,7 @@ const HomeServices = () => {
           <h3 className='text-4xl md:text-5xl mb-4'>
             Our <strong>Services</strong>
           </h3>
-          <Link to='#!' className='btn'>
+          <Link to='#!' className='btn hover:bg-white hover:text-primary'>
             KNOW MORE
           </Link>
         </div>
