@@ -5,6 +5,7 @@ import MainLayout from "../../layouts/MainLayout";
 import IndustryShowcase from "./IndustryShowcase";
 import IndustrySolution from "./IndustrySolution";
 import IndustryWhatWeDo from "./IndustryWhatWeDo";
+import IndustryWhatWeOffer from "./IndustryWhatWeOffer";
 
 const Industry = () => {
 	useEffect(() => {
@@ -16,6 +17,7 @@ const Industry = () => {
 			<IndustryShowcase />
 			<IndustrySolution />
 			<IndustryWhatWeDo />
+			<IndustryWhatWeOffer />
 		</MainLayout>
 	)
 }
