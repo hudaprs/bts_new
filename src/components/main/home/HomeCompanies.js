@@ -83,7 +83,7 @@ const HomeCompanies = () => {
         <img
           src={require("../../../assets/img/Home/Companies/Person3.png")}
           alt='Person3'
-          className='md:ml-10'
+          className='md:ml-10 border-8 border-primary'
           style={styles.companiesLeaderImgMiddle}
         />
         <img

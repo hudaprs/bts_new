@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-50 fixed bg-${
+      className={`w-full z-50 fixed overflow-scroll md:overflow-hidden bg-${
         scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
