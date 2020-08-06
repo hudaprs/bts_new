@@ -4,6 +4,7 @@ import React, {useEffect} from 'react'
 import MainLayout from "../../layouts/MainLayout";
 import IndustryShowcase from "./IndustryShowcase";
 import IndustrySolution from "./IndustrySolution";
+import IndustryWhatWeDo from "./IndustryWhatWeDo";
 
 const Industry = () => {
 	useEffect(() => {
@@ -14,6 +15,7 @@ const Industry = () => {
 		<MainLayout>
 			<IndustryShowcase />
 			<IndustrySolution />
+			<IndustryWhatWeDo />
 		</MainLayout>
 	)
 }
