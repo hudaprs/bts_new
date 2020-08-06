@@ -55,9 +55,44 @@ body {
   font-size: 13px;
 }
 
+/* Burger */
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all .3s ease-in;
+}
+
+.line-1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.line-2 {
+  opacity: 0;
+}
+
+.line-3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav-item li {
+  animation: navLinkFade 1s forwards ease-in-out
+}
+
 /* Navs */
 .current {
   @apply border-b-2  border-primary;
+}
+
+/* Animations */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 /* Home */

@@ -24,7 +24,7 @@ const Navbar = () => {
   return (
     <nav
       className={`w-full z-50 fixed bg-${
-        scrolled ? "dark-with-opacity" : "dark-transparent"
+        scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
@@ -38,14 +38,16 @@ const Navbar = () => {
         </Link>
 
         <div
-          className='cursor-pointer md:hidden'
+          className='cursor-pointer burger md:hidden mr-2'
           onClick={() => setToggleNav(!toggleNav)}
         >
-          <span className='fas fa-bars fa-2x'></span>
+          <div className={`${toggleNav ? 'line-1' : ''}`}></div>
+          <div className={`${toggleNav ? 'line-2' : ''}`}></div>
+          <div className={`${toggleNav ? 'line-3' : ''}`}></div>
         </div>
 
         <ul
-          className={`md:flex ${toggleNav ? "" : "hidden"}`}
+          className={`md:flex ${toggleNav ? "nav-item text-lg" : "hidden"}`}
           style={toggleNav ? styles.navLinksResponsive : null}
         >
           <li
@@ -119,7 +121,7 @@ const styles = {
     flexDirection: "column",
     alignItems: "center",
     top: "70px",
-    right: "25px",
+    right: "27px",
     transition: " 0.5s",
     width: "100%"
   },

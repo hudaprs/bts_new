@@ -18678,6 +18678,33 @@ body {
   font-size: 13px;
 }
 
+/* Burger */
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: rgb(226, 226, 226);
+  margin: 5px;
+  transition: all .3s ease-in;
+}
+
+.line-1 {
+  transform: rotate(-45deg) translate(-5px,6px);
+}
+
+.line-2 {
+  opacity: 0;
+}
+
+.line-3 {
+  transform: rotate(45deg) translate(-5px,-6px);
+}
+
+.nav-item li {
+  -webkit-animation: navLinkFade 1s forwards ease-in-out;
+          animation: navLinkFade 1s forwards ease-in-out
+}
+
 /* Navs */
 
 .current {
@@ -18685,6 +18712,28 @@ body {
   --border-opacity: 1;
   border-color: #b22026;
   border-color: rgba(178, 32, 38, var(--border-opacity));
+}
+
+/* Animations */
+
+@-webkit-keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 /* Home */

@@ -21,7 +21,7 @@ const ServiceFeaturedService = () => {
             </h3>
             <h3 className='font-default font-normal text-xl'>Manage Service</h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             We Make and Managing Application Workloads in Remote Offices.
             Transforming Remote or Branch Office Management. We offer you
             flexible choices, development or do outsourcing.
@@ -39,7 +39,7 @@ const ServiceFeaturedService = () => {
             <h3 className='font-default font-normal text-xl'>Web & Mobile</h3>
             <h3 className='font-default font-normal text-xl'>Development</h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             Make your brand growth up with us. Planning analyst (UI UX design,
             Coding, Testing). Application design that supports your business
             goals. Optimization Process, and Offline Integration.
@@ -58,7 +58,7 @@ const ServiceFeaturedService = () => {
               Cloud Integration
             </h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             Cloud controls applied. Data management at the local level with the
             highest security. With us, you can Reduced Costs, Reduced Risk, and
             Increased Application Availability.
@@ -78,7 +78,7 @@ const ServiceFeaturedService = () => {
               Intelligence, Big Data
             </h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             Learn how can you capture, analyze and glean actionable insight from
             the layers of security protecting your enterprise with us.
           </p>
@@ -97,7 +97,7 @@ const ServiceFeaturedService = () => {
               Consulting & Business Services
             </h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             Full support from our expert people. Lead the potential and achieve
             the goal with us.
           </p>
@@ -114,7 +114,7 @@ const ServiceFeaturedService = () => {
             <h3 className='font-default font-normal text-xl'>More than What</h3>
             <h3 className='font-default font-normal text-xl'>Listed</h3>
           </div>
-          <p className='card-text leading-loose w-56 mt-8'>
+          <p className='card-text leading-loose mt-8'>
             Big revenue will bring good resonation. We believe higher insight
             will bring you an excellent choice.
           </p>
