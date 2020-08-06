@@ -1,12 +1,31 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
 const Navbar = () => {
+  const location = window.location.href.split("/")[3]
   const [toggleNav, setToggleNav] = useState(false)
+  const [scrolled, setScrolled] = useState(false)
+
+  // Scroll animation for navbar
+  const onScroll = () => {
+    if (window.pageYOffset > 100) {
+      setScrolled(true)
+    } else {
+      setScrolled(false)
+    }
+  }
+
+  useEffect(() => {
+    window.addEventListener("scroll", onScroll)
+
+    return () => window.removeEventListener("scroll", onScroll)
+  })
 
   return (
     <nav
-      className='w-full z-50 fixed bg-dark-with-opacity text-white text-sm font-default font-hairline'
+      className={`w-full z-50 fixed bg-${
+        scrolled ? "dark-with-opacity" : "dark-transparent"
+      } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
       <div className='px-6 md:px-32 pt-6 m-auto flex justify-between items-center'>
@@ -29,22 +48,44 @@ const Navbar = () => {
           className={`md:flex ${toggleNav ? "" : "hidden"}`}
           style={toggleNav ? styles.navLinksResponsive : null}
         >
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
+          <li
+            className={`ml-16 ${location === "services" ? "current" : ""} p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
             <Link to='/services'>Services</Link>
           </li>
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
-            <Link to='#!'>Industries</Link>
+          <li
+            className={`ml-16 ${
+              location === "industries" ? "current" : ""
+            } p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
+            <Link to='/industries'>Industries</Link>
           </li>
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
+          <li
+            className={`ml-16 ${
+              location === "portfolios" ? "current" : ""
+            } p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
             <Link to='#!'>Portfolio</Link>
           </li>
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
+          <li
+            className={`ml-16 ${location === "blog" ? "current" : ""} p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
             <Link to='#!'>Blog</Link>
           </li>
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
+          <li
+            className={`ml-16 ${location === "companies" ? "current" : ""} p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
             <Link to='#!'>Companies</Link>
           </li>
-          <li className='ml-16' style={toggleNav ? styles.navLinksItem : null}>
+          <li
+            className={`ml-16 ${location === "search" ? "current" : ""} p-2`}
+            style={toggleNav ? styles.navLinksItem : null}
+          >
             <Link to='#!'>
               <img
                 src={require("../../../assets/img/Navbar/NavbarSearchIcon.png")}

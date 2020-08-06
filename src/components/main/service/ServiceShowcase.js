@@ -15,7 +15,7 @@ const ServiceShowcase = () => {
         <div className='z-10'>
           <div className='flex'>
             {/* Line */}
-            <div className='hidden md:block bg-white h-24 w-3 border border-white mr-10'></div>
+            <div className='hidden md:block bg-white h-24 w-3 border border-white mr-10'/>
             <div>
               <h1 className='text-5xl md:text-6xl mb-4'>
                 <strong>Services</strong>

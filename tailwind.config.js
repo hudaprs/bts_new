@@ -7,7 +7,8 @@ module.exports = {
         secondary: "#7c131b",
         light: "#fff",
         dark: "#171717",
-        "dark-with-opacity": "rgba(23, 23, 23, .1)"
+        "dark-transparent": "rgba(23, 23, 23, .2)",
+        "dark-with-opacity": "rgba(23, 23, 23, .9)"
       },
       fontFamily: {
         default: ["Aller-Bold"],

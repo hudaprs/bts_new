@@ -55,6 +55,11 @@ body {
   font-size: 13px;
 }
 
+/* Navs */
+.current {
+  @apply border-b-2  border-primary;
+}
+
 /* Home */
 @import "../_home.css";
 @import "../_mobile.css";
