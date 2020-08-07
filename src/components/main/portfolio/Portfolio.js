@@ -4,6 +4,7 @@ import React, { useEffect } from "react"
 import MainLayout from "../../layouts/MainLayout"
 import PortfolioShowcase from "./PortfoloioShowcase"
 import PortfolioList from "./PortfolioList"
+import PortfolioForm from "./PortfolioForm"
 
 const Portfolio = () => {
   useEffect(() => {
@@ -14,6 +15,7 @@ const Portfolio = () => {
     <MainLayout>
       <PortfolioShowcase />
       <PortfolioList />
+      <PortfolioForm />
     </MainLayout>
   )
 }

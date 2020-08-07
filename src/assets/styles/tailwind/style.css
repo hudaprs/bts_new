@@ -18718,7 +18718,11 @@ body {
 
 input,
 select {
-  color: black;
+  color: black !important;
+}
+
+input:checked {
+  background-color: red !important;
 }
 
 /* Pagination */
