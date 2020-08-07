@@ -41,9 +41,9 @@ const Navbar = () => {
           className='cursor-pointer burger md:hidden mr-2'
           onClick={() => setToggleNav(!toggleNav)}
         >
-          <div className={`${toggleNav ? 'line-1' : ''}`}></div>
-          <div className={`${toggleNav ? 'line-2' : ''}`}></div>
-          <div className={`${toggleNav ? 'line-3' : ''}`}></div>
+          <div className={`${toggleNav ? "line-1" : ""}`}></div>
+          <div className={`${toggleNav ? "line-2" : ""}`}></div>
+          <div className={`${toggleNav ? "line-3" : ""}`}></div>
         </div>
 
         <ul
@@ -70,7 +70,7 @@ const Navbar = () => {
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
-            <Link to='#!'>Portfolio</Link>
+            <Link to='/portfolios'>Portfolio</Link>
           </li>
           <li
             className={`ml-16 ${location === "blog" ? "current" : ""} p-2`}
