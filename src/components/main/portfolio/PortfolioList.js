@@ -7,7 +7,7 @@ import MaintenanceImage from "../../../assets/img/Portfolio/Maintenance.png"
 import AssetTrackerImage from "../../../assets/img/Portfolio/AssetTracker.png"
 import ECommerceImage from "../../../assets/img/Portfolio/ECommerce.png"
 import SalesForceAutomationImage from "../../../assets/img/Portfolio/SalesForceAutomation.png"
-import SearchIcon from "../../../assets/img/Navbar/NavbarSearchIcon.png"
+// import SearchIcon from "../../../assets/img/Navbar/NavbarSearchIcon.png"
 
 const PortfolioList = () => {
   return (
@@ -144,7 +144,5 @@ const PortfolioList = () => {
     </div>
   )
 }
-
-const styles = {}
 
 export default PortfolioList
