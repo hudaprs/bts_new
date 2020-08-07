@@ -26,7 +26,7 @@ const BlogItem = () => {
       <div className='grid grid-cols-3'>
         {/* Blog Item */}
         <div className='col-span-3 items-center justify-center md:col-span-2'>
-          <div className='blog-item'>
+          <div className='blog-item mb-16'>
             <img
               src={Blog5Image}
               alt='Blog1'
@@ -76,7 +76,7 @@ const BlogItem = () => {
             </a>
           </div>
 
-          <div className='blog-item'>
+          <div className='blog-item mb-16'>
             <img
               src={Blog1Image}
               alt='Blog1'
@@ -126,7 +126,7 @@ const BlogItem = () => {
             </a>
           </div>
 
-          <div className='blog-item'>
+          <div className='blog-item mb-16'>
             <img
               src={Blog2Image}
               alt='Blog3'
@@ -176,7 +176,7 @@ const BlogItem = () => {
             </a>
           </div>
 
-          <div className='blog-item'>
+          <div className='blog-item mb-16'>
             <img
               src={Blog3Image}
               alt='Blog4'
@@ -226,7 +226,7 @@ const BlogItem = () => {
             </a>
           </div>
 
-          <div className='blog-item'>
+          <div className='blog-item mb-16'>
             <img
               src={Blog4Image}
               alt='Blog5'

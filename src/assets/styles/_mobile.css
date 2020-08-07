@@ -41,6 +41,7 @@
   /* Home - Blog */
   .blog-item {
     padding: 20px 0;
+    margin-bottom: 0px !important;
     border-bottom: 1px #b22026 dotted;
   }
 
