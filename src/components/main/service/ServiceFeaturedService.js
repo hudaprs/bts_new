@@ -3,7 +3,7 @@ import React from "react"
 const ServiceFeaturedService = () => {
   return (
     <div className='px-6 md:px-24 py-10 font-primary'>
-      <h3 className='text-center text-4xl md:text-5xl mb-8'>
+      <h3 className='text-center text-2xl md:text-5xl mb-8'>
         Featured <strong>Service</strong>
       </h3>
 
@@ -16,10 +16,12 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>
+            <h3 className='font-default font-normal text-base md:text-xl'>
               Comprehensive IT
             </h3>
-            <h3 className='font-default font-normal text-xl'>Manage Service</h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Manage Service
+            </h3>
           </div>
           <p className='card-text leading-loose mt-8'>
             We Make and Managing Application Workloads in Remote Offices.
@@ -36,8 +38,12 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>Web & Mobile</h3>
-            <h3 className='font-default font-normal text-xl'>Development</h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Web & Mobile
+            </h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Development
+            </h3>
           </div>
           <p className='card-text leading-loose mt-8'>
             Make your brand growth up with us. Planning analyst (UI UX design,
@@ -54,7 +60,7 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>
+            <h3 className='font-default font-normal text-base md:text-xl'>
               Cloud Integration
             </h3>
           </div>
@@ -73,8 +79,10 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>Business</h3>
-            <h3 className='font-default font-normal text-xl'>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Business
+            </h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
               Intelligence, Big Data
             </h3>
           </div>
@@ -92,8 +100,10 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>Management</h3>
-            <h3 className='font-default font-normal text-xl'>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Management
+            </h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
               Consulting & Business Services
             </h3>
           </div>
@@ -111,8 +121,12 @@ const ServiceFeaturedService = () => {
             className='mb-8'
           />
           <div className='box-title mb-2'>
-            <h3 className='font-default font-normal text-xl'>More than What</h3>
-            <h3 className='font-default font-normal text-xl'>Listed</h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              More than What
+            </h3>
+            <h3 className='font-default font-normal text-base md:text-xl'>
+              Listed
+            </h3>
           </div>
           <p className='card-text leading-loose mt-8'>
             Big revenue will bring good resonation. We believe higher insight

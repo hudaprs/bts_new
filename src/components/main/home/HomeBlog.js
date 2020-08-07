@@ -25,13 +25,13 @@ const HomeBlog = () => {
       </div>
 
       {/* Blog list */}
-      <div className='mt-4 grid grid-cols-1 items-center justify-center md:grid-cols-3 gap-5'>
+      <div className='mt-4 grid grid-cols-1 text-center md:text-left md:grid-cols-3 gap-5'>
         <div className='blog-item'>
-          <img src={Blog1Image} alt='Blog1' />
+          <img src={Blog1Image} alt='Blog1' style={{ textAlign: "center" }} />
           <h6 className='text-xl font-default mt-4'>
             Aplikasi ERP Pada Rumah Sakit
           </h6>
-          <p className='text-justify leading-loose mt-4 mb-8'>
+          <p className='text-justify text-sm md:text-base leading-loose mt-4 mb-8'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -48,7 +48,7 @@ const HomeBlog = () => {
           <h6 className='text-xl font-default mt-4'>
             Aplikasi ERP Pada Rumah Sakit
           </h6>
-          <p className='text-justify leading-loose mt-4 mb-8'>
+          <p className='text-justify text-sm md:text-base leading-loose mt-4 mb-8'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -65,7 +65,7 @@ const HomeBlog = () => {
           <h6 className='text-xl font-default mt-4'>
             Aplikasi ERP Pada Rumah Sakit
           </h6>
-          <p className='text-justify leading-loose mt-4 mb-8'>
+          <p className='text-justify text-sm md:text-base leading-loose mt-4 mb-8'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>

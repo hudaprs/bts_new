@@ -25,7 +25,7 @@ const BlogItem = () => {
       {/* Grid Col 3 */}
       <div className='grid grid-cols-3'>
         {/* Blog Item */}
-        <div className='col-span-3 md:col-span-2'>
+        <div className='col-span-3 items-center justify-center md:col-span-2'>
           <div className='blog-item'>
             <img
               src={Blog5Image}

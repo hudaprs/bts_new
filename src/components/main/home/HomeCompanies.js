@@ -61,13 +61,13 @@ const HomeCompanies = () => {
       <div className='flex items-center justify-end mt-10'>
         {/* Line */}
         <div className='mr-2 rounded bg-primary border-primary border h-2 w-8 hidden md:block'></div>
-        <h5 className='text-xl md:text-xl font-secondary'>
+        <h5 className='text-sm md:text-xl font-secondary'>
           SALMA FONSECA, PT. INDO TAMBANGRAYA MEGAH
         </h5>
       </div>
 
       {/* Companies Leader */}
-      <div className='flex justify-center items-center mt-16'>
+      <div className='flex justify-center items-center mt-8 md:mt-16'>
         <img
           src={require("../../../assets/img/Home/Companies/Person1.png")}
           alt='Person1'
