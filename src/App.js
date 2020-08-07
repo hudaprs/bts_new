@@ -10,6 +10,7 @@ import Home from "./components/main/home/Home"
 import Service from "./components/main/service/Service"
 import Industry from "./components/main/industry/Industry"
 import Portfolio from "./components/main/portfolio/Portfolio"
+import Blog from "./components/main/blog/Blog"
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route exact path='/services' component={Service} />
         <Route exact path='/industries' component={Industry} />
         <Route exact path='/portfolios' component={Portfolio} />
+        <Route exact path='/blog' component={Blog} />
       </Switch>
     </Router>
   )

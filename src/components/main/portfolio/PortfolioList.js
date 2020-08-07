@@ -119,7 +119,7 @@ const PortfolioList = () => {
 
       {/* Pagination */}
       <ul className='pagination justify-center md:justify-start mt-16'>
-        <li className='active mr-6'>
+        <li className='active mr-8'>
           <a href='#!'>
             <span className='fas fa-chevron-left'></span>
           </a>
@@ -135,7 +135,7 @@ const PortfolioList = () => {
           <a href='#!'>3</a>
         </li>
 
-        <li className='active ml-6'>
+        <li className='active ml-8'>
           <a href='#!'>
             <span className='fas fa-chevron-right'></span>
           </a>

@@ -46,6 +46,14 @@ body {
   @apply bg-primary py-3 px-5 rounded transition ease-in duration-500;
 }
 
+.btn-primary {
+  @apply bg-primary text-white px-6 py-3 w-32 rounded transition duration-500;
+}
+
+.btn-primary-sm {
+  @apply bg-primary text-white px-4 py-2 w-20 text-xs rounded transition duration-500;
+}
+
 /* Card */
 .card {
   @apply bg-dark rounded;

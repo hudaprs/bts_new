@@ -54,14 +54,16 @@ const Navbar = () => {
           style={toggleNav ? styles.navLinksResponsive : null}
         >
           <li
-            className={`ml-16 ${location === "services" ? "current" : ""} p-2`}
+            className={`ml-16 ${
+              location.includes("services") ? "current" : ""
+            } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
             <Link to='/services'>Services</Link>
           </li>
           <li
             className={`ml-16 ${
-              location === "industries" ? "current" : ""
+              location.includes("industries") ? "current" : ""
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
@@ -69,20 +71,24 @@ const Navbar = () => {
           </li>
           <li
             className={`ml-16 ${
-              location === "portfolios" ? "current" : ""
+              location.includes("portfolios") ? "current" : ""
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
             <Link to='/portfolios'>Portfolio</Link>
           </li>
           <li
-            className={`ml-16 ${location === "blog" ? "current" : ""} p-2`}
+            className={`ml-16 ${
+              location.includes("blog") ? "current" : ""
+            } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
-            <Link to='#!'>Blog</Link>
+            <Link to='/blog'>Blog</Link>
           </li>
           <li
-            className={`ml-16 ${location === "companies" ? "current" : ""} p-2`}
+            className={`ml-16 ${
+              location.includes("companies") ? "current" : ""
+            } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
             <Link to='#!'>Companies</Link>

@@ -36,11 +36,14 @@ const HomeServices = () => {
 
       <div className='services-title text-center' id='home-service-title'>
         <div>
-          <h3 className='text-4xl md:text-5xl mb-4'>
+          <h3 className='text-3xl md:text-5xl mb-4'>
             Our <strong>Services</strong>
           </h3>
-          <Link to='#!' className='btn hover:bg-white hover:text-primary'>
-            KNOW MORE
+          <Link
+            to='#!'
+            className='btn-primary uppercase hover:bg-white hover:text-primary'
+          >
+            Know More
           </Link>
         </div>
       </div>

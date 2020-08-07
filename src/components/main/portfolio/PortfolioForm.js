@@ -10,7 +10,7 @@ const PortfolioForm = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6'>
           <div className='w-full'>
             <label
-              className='block uppercase tracking-wide text-white text-xs font-bold mb-2'
+              className='block uppercase tracking-wide text-white text-base font-bold mb-2'
               htmlFor='name'
             >
               Name <span className='text-primary'>*</span>
@@ -25,7 +25,7 @@ const PortfolioForm = () => {
 
           <div className='w-full'>
             <label
-              className='block uppercase tracking-wide text-white text-xs font-bold mb-2'
+              className='block uppercase tracking-wide text-white text-base font-bold mb-2'
               htmlFor='email'
             >
               Email <span className='text-primary'>*</span>
@@ -42,7 +42,7 @@ const PortfolioForm = () => {
         <div className='grid grid-cols-1 md:grid-cols-2 gap-6 mt-6 md:mt-12'>
           <div className='w-full'>
             <label
-              className='block uppercase tracking-wide text-white text-xs font-bold mb-2'
+              className='block uppercase tracking-wide text-white text-base font-bold mb-2'
               htmlFor='phone'
             >
               Phone Number <span className='text-primary'>*</span>
@@ -57,7 +57,7 @@ const PortfolioForm = () => {
 
           <div className='w-full'>
             <label
-              className='block uppercase tracking-wide text-white text-xs font-bold mb-2'
+              className='block uppercase tracking-wide text-white text-base font-bold mb-2'
               htmlFor='company'
             >
               Company Name <span className='text-primary'>*</span>
@@ -74,7 +74,7 @@ const PortfolioForm = () => {
         {/* CheckBoxes */}
         <div className='mt-6'>
           <label
-            className='block uppercase tracking-wide text-white text-xs font-bold mb-4'
+            className='block uppercase tracking-wide text-white text-base font-bold mb-4'
             htmlFor='phone'
           >
             Service Needed <span className='text-primary'>*</span>
@@ -109,7 +109,7 @@ const PortfolioForm = () => {
 
         <div className='w-full mt-6'>
           <label
-            className='block uppercase tracking-wide text-xs font-bold mb-2'
+            className='block uppercase tracking-wide text-base font-bold mb-2'
             htmlFor='message'
           >
             Message <span className='text-primary'>*</span>

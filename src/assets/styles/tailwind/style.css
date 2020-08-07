@@ -18665,6 +18665,41 @@ body {
   transition-duration: 500ms;
 }
 
+.btn-primary {
+  --bg-opacity: 1;
+  background-color: #b22026;
+  background-color: rgba(178, 32, 38, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+  width: 8rem;
+  border-radius: 0.25rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 500ms;
+}
+
+.btn-primary-sm {
+  --bg-opacity: 1;
+  background-color: #b22026;
+  background-color: rgba(178, 32, 38, var(--bg-opacity));
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  width: 5rem;
+  font-size: 0.75rem;
+  border-radius: 0.25rem;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-duration: 500ms;
+}
+
 /* Card */
 
 .card {

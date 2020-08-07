@@ -47,4 +47,9 @@
   .blog-item:last-child {
     border: none;
   }
+
+  .blog-item > img {
+    width: 272px;
+    height: 245px !important;
+  }
 }
