@@ -1,6 +1,9 @@
 import React, { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
 
+// Images
+import NavbarSearchIcon from "../../../assets/img/Navbar/NavbarSearchIcon.png"
+
 const Navbar = () => {
   const location = window.location.href.split("/")[3]
   const [toggleNav, setToggleNav] = useState(false)
@@ -90,7 +93,7 @@ const Navbar = () => {
           >
             <Link to='#!'>
               <img
-                src={require("../../../assets/img/Navbar/NavbarSearchIcon.png")}
+                src={NavbarSearchIcon}
                 alt='NavbarSearch'
                 className='content-center'
               />

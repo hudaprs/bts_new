@@ -61,11 +61,11 @@ body {
   height: 3px;
   background-color: rgb(226, 226, 226);
   margin: 5px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .line-1 {
-  transform: rotate(-45deg) translate(-5px,6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .line-2 {
@@ -73,16 +73,40 @@ body {
 }
 
 .line-3 {
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .nav-item li {
-  animation: navLinkFade 1s forwards ease-in-out
+  animation: navLinkFade 1s forwards ease-in-out;
 }
 
 /* Navs */
 .current {
   @apply border-b-2  border-primary;
+}
+
+/* Input */
+input,
+select {
+  color: black;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+}
+
+.pagination li {
+  @apply border-white border rounded py-2 px-4 cursor-pointer transition ease-in duration-200;
+}
+
+.pagination li.active {
+  @apply bg-primary border-0 text-white;
+}
+
+.pagination li a {
+  text-align: center;
+  margin: 20px auto;
 }
 
 /* Animations */

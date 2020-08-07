@@ -18685,11 +18685,11 @@ body {
   height: 3px;
   background-color: rgb(226, 226, 226);
   margin: 5px;
-  transition: all .3s ease-in;
+  transition: all 0.3s ease-in;
 }
 
 .line-1 {
-  transform: rotate(-45deg) translate(-5px,6px);
+  transform: rotate(-45deg) translate(-5px, 6px);
 }
 
 .line-2 {
@@ -18697,12 +18697,12 @@ body {
 }
 
 .line-3 {
-  transform: rotate(45deg) translate(-5px,-6px);
+  transform: rotate(45deg) translate(-5px, -6px);
 }
 
 .nav-item li {
   -webkit-animation: navLinkFade 1s forwards ease-in-out;
-          animation: navLinkFade 1s forwards ease-in-out
+          animation: navLinkFade 1s forwards ease-in-out;
 }
 
 /* Navs */
@@ -18712,6 +18712,50 @@ body {
   --border-opacity: 1;
   border-color: #b22026;
   border-color: rgba(178, 32, 38, var(--border-opacity));
+}
+
+/* Input */
+
+input,
+select {
+  color: black;
+}
+
+/* Pagination */
+
+.pagination {
+  display: flex;
+}
+
+.pagination li {
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  border-width: 1px;
+  border-radius: 0.25rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  cursor: pointer;
+  transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 1, 1);
+  transition-duration: 200ms;
+}
+
+.pagination li.active {
+  --bg-opacity: 1;
+  background-color: #b22026;
+  background-color: rgba(178, 32, 38, var(--bg-opacity));
+  border-width: 0;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
+}
+
+.pagination li a {
+  text-align: center;
+  margin: 20px auto;
 }
 
 /* Animations */
