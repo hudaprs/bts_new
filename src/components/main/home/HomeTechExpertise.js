@@ -1,8 +1,10 @@
 import React from "react"
+import Slider from "react-slick"
+import sliderSetting from "../../../utils/slider-setting"
 
 const TechExpertise = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='px-6 md:px-24 py-10 font-primary' id='tech-expertise'>
       <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
         <div>
           {/* Header */}
@@ -34,27 +36,34 @@ const TechExpertise = () => {
           </p>
 
           {/* Tech List */}
-          <div className='flex flex-col md:flex-row items-center justify-between'>
-            <img
-              src={require("../../../assets/img/Home/TechExpertise/Node.png")}
-              alt='Node'
-              style={styles.techListImg}
-            />
-            <img
-              src={require("../../../assets/img/Home/TechExpertise/React.png")}
-              alt='React'
-              style={styles.techListImg}
-            />
-            <img
-              src={require("../../../assets/img/Home/TechExpertise/Xamarin.png")}
-              alt='Xamarin'
-              style={styles.techListImg}
-            />
-            <img
-              src={require("../../../assets/img/Home/TechExpertise/Angular.png")}
-              alt='Angular'
-              style={styles.techListImg}
-            />
+          <div className='items-center justify-between'>
+            <Slider {...sliderSetting}>
+              <img
+                src={require("../../../assets/img/Home/TechExpertise/Node.png")}
+                alt='Node'
+                style={styles.techListImg}
+              />
+              <img
+                src={require("../../../assets/img/Home/TechExpertise/React.png")}
+                alt='React'
+                style={styles.techListImg}
+              />
+              <img
+                src={require("../../../assets/img/Home/TechExpertise/Xamarin.png")}
+                alt='Xamarin'
+                style={styles.techListImg}
+              />
+              <img
+                src={require("../../../assets/img/Home/TechExpertise/Angular.png")}
+                alt='Angular'
+                style={styles.techListImg}
+              />
+              <img
+                src={require("../../../assets/img/Home/TechExpertise/Xamarin.png")}
+                alt='Xamarin'
+                style={styles.techListImg}
+              />
+            </Slider>
           </div>
         </div>
 

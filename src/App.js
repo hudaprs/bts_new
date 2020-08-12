@@ -12,7 +12,7 @@ import Industry from "./components/main/industry/Industry"
 import Portfolio from "./components/main/portfolio/Portfolio"
 import Blog from "./components/main/blog/Blog"
 
-function App() {
+const App = () => {
   return (
     <Router>
       <Switch>

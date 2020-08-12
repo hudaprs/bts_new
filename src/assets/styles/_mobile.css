@@ -57,6 +57,17 @@
     height: 245px !important;
   }
 
+  /* Home - Tech Expertise */
+  #tech-expertise img {
+    width: 150px !important;
+    height: 150px !important;
+  }
+
+  /* React Slick Package */
+  .slick-slide div {
+    text-align: center;
+  }
+
   /* Portfolio - Portfolio List */
   #select-input-portfolio {
     bottom: 0px !important;
