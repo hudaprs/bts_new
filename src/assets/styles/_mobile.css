@@ -58,8 +58,8 @@
   }
 
   /* Home - Tech Expertise & Companies */
-  #tech-expertise img,
-  #companies img {
+  #tech-expertise .tech-list img,
+  #companies .company-logo-list img {
     width: 150px !important;
     height: 150px !important;
   }
