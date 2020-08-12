@@ -18797,6 +18797,15 @@ input:checked {
   margin: 20px auto;
 }
 
+/* React Slick Slider */
+
+.slick-slide div,
+.slick-slide img {
+  border-color: transparent !important;
+  outline-color: transparent !important;
+  outline: none;
+}
+
 /* Animations */
 
 @-webkit-keyframes navLinkFade {

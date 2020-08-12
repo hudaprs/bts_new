@@ -36,32 +36,23 @@ const TechExpertise = () => {
           </p>
 
           {/* Tech List */}
-          <div className='items-center justify-between'>
-            <Slider {...sliderSetting}>
+          <div className='items-center justify-between tech-list'>
+            <Slider {...sliderSetting(4)}>
               <img
                 src={require("../../../assets/img/Home/TechExpertise/Node.png")}
                 alt='Node'
-                style={styles.techListImg}
               />
               <img
                 src={require("../../../assets/img/Home/TechExpertise/React.png")}
                 alt='React'
-                style={styles.techListImg}
               />
               <img
                 src={require("../../../assets/img/Home/TechExpertise/Xamarin.png")}
                 alt='Xamarin'
-                style={styles.techListImg}
               />
               <img
                 src={require("../../../assets/img/Home/TechExpertise/Angular.png")}
                 alt='Angular'
-                style={styles.techListImg}
-              />
-              <img
-                src={require("../../../assets/img/Home/TechExpertise/Xamarin.png")}
-                alt='Xamarin'
-                style={styles.techListImg}
               />
             </Slider>
           </div>
@@ -81,10 +72,6 @@ const TechExpertise = () => {
 }
 
 const styles = {
-  techListImg: {
-    width: "109px",
-    height: "109px"
-  },
   techExpertiseImg: {
     width: "573px",
     height: "396px"

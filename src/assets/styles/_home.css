@@ -59,3 +59,15 @@
   padding: 0 20px;
   margin-bottom: 4rem;
 }
+
+/* Home - Tech Expertise */
+#tech-expertise .tech-list img {
+  width: 109px !important;
+  height: 109px !important;
+}
+
+/* Home - Companies */
+#companies .company-logo-list img {
+  width: 130px !important;
+  height: 148px !important;
+}

@@ -57,8 +57,9 @@
     height: 245px !important;
   }
 
-  /* Home - Tech Expertise */
-  #tech-expertise img {
+  /* Home - Tech Expertise & Companies */
+  #tech-expertise img,
+  #companies img {
     width: 150px !important;
     height: 150px !important;
   }
