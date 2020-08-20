@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 // Components
 import BlogRecentArticleForm from "./BlogRecentArticleForm"
@@ -12,7 +12,7 @@ import RecentBlog5Image from "../../../assets/img/Blog/RecentBlog5.png"
 import RecentBlog6Image from "../../../assets/img/Blog/RecentBlog6.png"
 
 const BlogRecentArticle = () => {
-  const [recents, setRecents] = useState([
+  const recents = [
     {
       id: 1,
       img: RecentBlog1Image,
@@ -49,7 +49,7 @@ const BlogRecentArticle = () => {
       text:
         "Sebelum melakukan Integrasi Sistem Part. 3: Tahapan Proses Integrasi Sistem"
     }
-  ])
+  ]
 
   return (
     <div className='hidden xl:block xl:col-span-1'>

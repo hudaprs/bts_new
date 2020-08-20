@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 
 // Images & Icons
 import Blog1Image from "../../../assets/img/Blog/Blog1.png"
@@ -11,7 +11,7 @@ import UserIcon from "../../../assets/img/Blog/UserIcon.svg"
 import CategoryIcon from "../../../assets/img/Blog/CategoryIcon.svg"
 
 const BlogMainArticle = () => {
-  const [articles, setArticles] = useState([
+  const articles = [
     {
       id: 1,
       img: Blog1Image,
@@ -82,7 +82,7 @@ const BlogMainArticle = () => {
       aliquip ex ea commodo consequat. Duis aute irure dolor in
       reprehenderit in voluptate velit esse cillum dolore.`
     }
-  ])
+  ]
 
   return (
     <div className='col-span-3 xl:col-span-2 items-center justify-center'>

@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { Link } from "react-router-dom"
 
 // Images
@@ -10,7 +10,7 @@ import DataImage from "../../../assets/img/Home/Services/Data.png"
 import TodoImage from "../../../assets/img/Home/Services/Todo.png"
 
 const HomeServices = () => {
-  const [services, setServices] = useState([
+  const services = [
     {
       id: 1,
       img: ComperhensiveImage,
@@ -41,7 +41,7 @@ const HomeServices = () => {
       img: TodoImage,
       title: "More than What Listed"
     }
-  ])
+  ]
 
   return (
     <div className='wrapper font-primary text-center' id='home-service'>
