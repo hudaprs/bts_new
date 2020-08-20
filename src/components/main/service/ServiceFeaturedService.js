@@ -7,7 +7,7 @@ const ServiceFeaturedService = () => {
         Featured <strong>Service</strong>
       </h3>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10'>
         <div className='card px-8 py-16'>
           <img
             src={require("../../../assets/img/Home/Services/Comperhensive.png")}

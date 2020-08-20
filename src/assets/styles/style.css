@@ -4,18 +4,17 @@
 
 @font-face {
   font-family: "Aller-Regular";
-  src: local("Aller-Regular"), url(../../Aller_Rg.ttf) format("truetype");
+  src: local("Aller-Regular"), url(../Aller_Rg.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Aller-Bold";
-  src: local("Aller-Bold"), url(../../Aller_Bd.ttf) format("truetype");
+  src: local("Aller-Bold"), url(../Aller_Bd.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
-  src: local("Montserrat-Bold"),
-    url(../../Montserrat-Bold.otf) format("opentype");
+  src: local("Montserrat-Bold"), url(../Montserrat-Bold.otf) format("opentype");
 }
 
 body {
@@ -23,8 +22,17 @@ body {
   color: #fff;
 }
 
+/* Navbar */
+.current {
+  @apply border-b-2;
+  @apply border-primary;
+}
+
+/* Showcase */
 .showcase {
-  position: relative;
+  @apply relative;
+  @apply font-primary;
+  @apply text-white;
 }
 
 .showcase::before {
@@ -41,66 +49,81 @@ body {
   );
 }
 
+.showcase .showcase-container {
+  @apply flex;
+  @apply px-6;
+  @apply justify-center;
+  @apply items-center;
+  @apply relative;
+  @apply h-screen;
+}
+
+.showcase .showcase-title {
+  @apply text-2xl;
+  @apply text-center;
+}
+
+.showcase .showcase-content {
+  @apply z-10;
+}
+
+.showcase .showcase-text {
+  @apply leading-loose;
+  @apply hidden;
+  @apply text-sm;
+}
+
+.showcase .showcase-left-line {
+  @apply hidden;
+  @apply bg-white;
+  @apply w-3;
+  @apply border;
+  @apply border-white;
+  @apply mr-10;
+}
+
 /* Btn */
 .btn {
-  @apply bg-primary py-3 px-5 rounded transition ease-in duration-500;
+  @apply bg-primary;
+  @apply py-3;
+  @apply px-5;
+  @apply rounded;
+  @apply transition;
+  @apply ease-in;
+  @apply duration-500;
 }
 
 .btn-primary {
-  @apply bg-primary text-white px-6 py-3 w-32 rounded transition duration-500;
+  @apply bg-primary;
+  @apply text-white;
+  @apply px-6;
+  @apply py-3;
+  @apply w-32;
+  @apply rounded;
+  @apply transition;
+  @apply duration-500;
 }
 
 .btn-primary-sm {
-  @apply bg-primary text-white px-4 py-2 w-20 text-xs rounded transition duration-500;
+  @apply bg-primary;
+  @apply text-white;
+  @apply px-4;
+  @apply py-2;
+  @apply w-20;
+  @apply text-xs;
+  @apply rounded;
+  @apply transition;
+  @apply duration-500;
 }
 
 /* Card */
 .card {
-  @apply bg-dark rounded;
+  @apply bg-dark;
+  @apply rounded;
 }
 
 .card-text {
   font-size: 13px;
-}
-
-/* Burger */
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(226, 226, 226);
-  margin: 5px;
-  transition: all 0.3s ease-in;
-}
-
-.line-1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.line-2 {
-  opacity: 0;
-}
-
-.line-3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.nav-item li {
-  animation: navLinkFade 1s forwards ease-in-out;
-}
-
-/* Navs */
-.current {
-  @apply border-b-2  border-primary;
-}
-
-/* Input */
-input,
-select {
-  color: black !important;
-}
-
-input:checked {
-  background-color: red !important;
 }
 
 /* Pagination */
@@ -109,11 +132,21 @@ input:checked {
 }
 
 .pagination li {
-  @apply border-white border rounded py-2 px-4 cursor-pointer transition ease-in duration-200;
+  @apply border-white;
+  @apply border;
+  @apply rounded;
+  @apply py-2;
+  @apply px-4;
+  @apply cursor-pointer;
+  @apply transition;
+  @apply ease-in;
+  @apply duration-200;
 }
 
 .pagination li.active {
-  @apply bg-primary border-0 text-white;
+  @apply bg-primary;
+  @apply border-0;
+  @apply text-white;
 }
 
 .pagination li a {
@@ -121,23 +154,56 @@ input:checked {
   margin: 20px auto;
 }
 
-/* React Slick Slider */
-.slick-slide div,
-.slick-slide img {
-  border-color: transparent !important;
-  outline-color: transparent !important;
-  outline: none;
-}
-/* Animations */
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
+/* Screen Medium */
+@screen md {
+  /* Showcase */
+  .showcase .showcase-container {
+    @apply grid grid-cols-2 px-32;
   }
-  to {
-    opacity: 1;
+
+  .showcase .showcase-title {
+    @apply text-3xl mb-4 text-left;
+  }
+
+  .showcase .showcase-content {
+    @apply mt-8;
+  }
+
+  .showcase .showcase-text {
+    @apply block;
+  }
+
+  .showcase .showcase-left-line {
+    @apply block h-12;
   }
 }
 
-/* Home */
-@import "../_home.css";
-@import "../_mobile.css";
+/* Screen Large */
+@screen lg {
+  .showcase .showcase-text {
+    @apply block;
+  }
+}
+
+/* Screen Extra Large */
+@screen xl {
+  /* Showcase */
+  .showcase .showcase-title {
+    @apply text-6xl;
+  }
+
+  .showcase .showcase-text {
+    @apply block text-base;
+  }
+
+  .showcase .showcase-left-line {
+    @apply h-24;
+  }
+}
+
+@import "./_utils.css";
+@import "./_navs.css";
+@import "./_home.css";
+@import "./_burger.css";
+@import "./_reactslick.css";
+@import "./_mobile.css";

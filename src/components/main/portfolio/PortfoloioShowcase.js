@@ -5,22 +5,19 @@ import PortfolioShowcaseImage from "../../../assets/img/Portfolio/PortfolioShowc
 
 const PortfolioShowcase = () => {
   return (
-    <div className='showcase font-primary text-white ' style={styles.showcase}>
+    <div className='showcase ' style={styles.showcase}>
       {/* Showcase Container */}
-      <div
-        className='flex md:grid px-6 md:px-32 md:grid-cols-2 justify-center items-center relative'
-        style={{ height: "100vh" }}
-      >
+      <div className='showcase-container'>
         {/* Showcase Content */}
-        <div className='z-10'>
+        <div className='showcase-content'>
           <div className='flex'>
             {/* Line */}
-            <div className='hidden md:block bg-white h-24 w-3 border border-white mr-10' />
+            <div className='showcase-left-line' />
             <div>
-              <h1 className='text-5xl md:text-6xl mb-4'>
+              <h1 className='showcase-title'>
                 <strong>Portfolio</strong>
               </h1>
-              <p className='leading-loose hidden md:block'>
+              <p className='showcase-text'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.
@@ -36,10 +33,6 @@ const PortfolioShowcase = () => {
 const styles = {
   showcase: {
     background: `url(${PortfolioShowcaseImage}) no-repeat center center/cover`
-  },
-  btnShowcaseContainer: {
-    width: "198px",
-    height: "52px"
   }
 }
 

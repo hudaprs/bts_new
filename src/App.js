@@ -3,7 +3,7 @@ import React from "react"
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom"
 
 // Tailwind CSS
-import "./assets/styles/tailwind/style.css"
+import "./assets/styles/tailwind.css"
 
 // Components
 import Home from "./components/main/home/Home"

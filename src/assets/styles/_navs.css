@@ -1,0 +1,14 @@
+/* Navs */
+.nav-item li {
+  animation: navLinkFade 1s forwards ease-in-out;
+}
+
+/* Animations */
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

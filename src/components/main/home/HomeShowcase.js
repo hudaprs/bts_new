@@ -9,19 +9,16 @@ import MouseIcon from "../../../assets/img/MouseIcon.svg"
 
 const HomeShowcase = () => {
   return (
-    <div className='showcase font-primary text-white' style={styles.showcase}>
+    <div className='showcase' style={styles.showcase}>
       {/* Showcase Container */}
-      <div
-        className='px-6 md:px-32 flex md:grid md:grid-cols-2 justify-center items-center relative'
-        style={{ height: "100vh" }}
-      >
+      <div className='showcase-container'>
         {/* Showcase Content */}
-        <div className='z-10'>
-          <div className='hidden xl:block w-32 bg-white h-2 border border-white mb-6'></div>
-          <h1 className='text-3xl md:text-5xl xl:text-6xl md:mt-10 text-center md:text-left'>
+        <div className='showcase-content'>
+          <div className='hidden md:block lg:block xl:block w-32 bg-white h-2 border border-white mb-6'></div>
+          <h1 className='showcase-title'>
             System <strong>Integrator</strong>
           </h1>
-          <p className='leading-loose hidden md:block xl:block overflow-x-hidden '>
+          <p className='showcase-text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
@@ -29,7 +26,7 @@ const HomeShowcase = () => {
 
           {/* Buttons */}
           <div
-            className='hidden md:block relative md:mt-6 xl:mt-20'
+            className='hidden md:hidden lg:block xl:block relative md:mt-6 xl:mt-20'
             style={styles.btnShowcaseContainer}
           >
             <Link

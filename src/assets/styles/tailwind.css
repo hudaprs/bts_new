@@ -18610,20 +18610,19 @@ video {
 @font-face {
   font-family: "Aller-Regular";
 
-  src: local("Aller-Regular"), url(../../Aller_Rg.ttf) format("truetype");
+  src: local("Aller-Regular"), url(../Aller_Rg.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Aller-Bold";
 
-  src: local("Aller-Bold"), url(../../Aller_Bd.ttf) format("truetype");
+  src: local("Aller-Bold"), url(../Aller_Bd.ttf) format("truetype");
 }
 
 @font-face {
   font-family: "Montserrat-Bold";
 
-  src: local("Montserrat-Bold"),
-    url(../../Montserrat-Bold.otf) format("opentype");
+  src: local("Montserrat-Bold"), url(../Montserrat-Bold.otf) format("opentype");
 }
 
 body {
@@ -18631,8 +18630,23 @@ body {
   color: #fff;
 }
 
+/* Navbar */
+
+.current {
+  border-bottom-width: 2px;
+  --border-opacity: 1;
+  border-color: #b22026;
+  border-color: rgba(178, 32, 38, var(--border-opacity));
+}
+
+/* Showcase */
+
 .showcase {
   position: relative;
+  font-family: Aller-Regular;
+  --text-opacity: 1;
+  color: #fff;
+  color: rgba(255, 255, 255, var(--text-opacity));
 }
 
 .showcase::before {
@@ -18647,6 +18661,44 @@ body {
     rgba(32, 32, 32, 0.6) 0%,
     #0e0e0e 100%
   );
+}
+
+.showcase .showcase-container {
+  display: flex;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100vh;
+}
+
+.showcase .showcase-title {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.showcase .showcase-content {
+  z-index: 10;
+}
+
+.showcase .showcase-text {
+  line-height: 2;
+  display: none;
+  font-size: 0.875rem;
+}
+
+.showcase .showcase-left-line {
+  display: none;
+  --bg-opacity: 1;
+  background-color: #fff;
+  background-color: rgba(255, 255, 255, var(--bg-opacity));
+  width: 0.75rem;
+  border-width: 1px;
+  --border-opacity: 1;
+  border-color: #fff;
+  border-color: rgba(255, 255, 255, var(--border-opacity));
+  margin-right: 2.5rem;
 }
 
 /* Btn */
@@ -18713,53 +18765,6 @@ body {
   font-size: 13px;
 }
 
-/* Burger */
-
-.burger div {
-  width: 25px;
-  height: 3px;
-  background-color: rgb(226, 226, 226);
-  margin: 5px;
-  transition: all 0.3s ease-in;
-}
-
-.line-1 {
-  transform: rotate(-45deg) translate(-5px, 6px);
-}
-
-.line-2 {
-  opacity: 0;
-}
-
-.line-3 {
-  transform: rotate(45deg) translate(-5px, -6px);
-}
-
-.nav-item li {
-  -webkit-animation: navLinkFade 1s forwards ease-in-out;
-          animation: navLinkFade 1s forwards ease-in-out;
-}
-
-/* Navs */
-
-.current {
-  border-bottom-width: 2px;
-  --border-opacity: 1;
-  border-color: #b22026;
-  border-color: rgba(178, 32, 38, var(--border-opacity));
-}
-
-/* Input */
-
-input,
-select {
-  color: black !important;
-}
-
-input:checked {
-  background-color: red !important;
-}
-
 /* Pagination */
 
 .pagination {
@@ -18797,42 +18802,76 @@ input:checked {
   margin: 20px auto;
 }
 
-/* React Slick Slider */
+/* Screen Medium */
 
-.slick-slide div,
-.slick-slide img {
-  border-color: transparent !important;
-  outline-color: transparent !important;
-  outline: none;
+@media (min-width: 768px) {
+  /* Showcase */
+
+  .showcase .showcase-container {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
+
+  .showcase .showcase-title {
+    font-size: 1.875rem;
+    margin-bottom: 1rem;
+    text-align: left;
+  }
+
+  .showcase .showcase-content {
+    margin-top: 2rem;
+  }
+
+  .showcase .showcase-text {
+    display: block;
+  }
+
+  .showcase .showcase-left-line {
+    display: block;
+    height: 3rem;
+  }
 }
 
-/* Animations */
+/* Screen Large */
 
-@-webkit-keyframes navLinkFade {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
+@media (min-width: 1024px) {
+  .showcase .showcase-text {
+    display: block;
   }
 }
 
-@keyframes navLinkFade {
-  from {
-    opacity: 0;
+/* Screen Extra Large */
+
+@media (min-width: 1280px) {
+  /* Showcase */
+
+  .showcase .showcase-title {
+    font-size: 4rem;
   }
 
-  to {
-    opacity: 1;
+  .showcase .showcase-text {
+    display: block;
+    font-size: 1rem;
+  }
+
+  .showcase .showcase-left-line {
+    height: 6rem;
   }
 }
 
-/* Home */
+@import "./_utils.css";
 
-@import "../_home.css";
+@import "./_navs.css";
 
-@import "../_mobile.css";
+@import "./_home.css";
+
+@import "./_burger.css";
+
+@import "./_reactslick.css";
+
+@import "./_mobile.css";
 
 @media (min-width: 640px) {
   .sm\:container {

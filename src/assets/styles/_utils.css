@@ -1,0 +1,9 @@
+/* Input */
+input,
+select {
+  color: black !important;
+}
+
+input:checked {
+  background-color: red !important;
+}
