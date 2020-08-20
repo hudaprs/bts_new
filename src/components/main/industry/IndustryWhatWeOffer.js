@@ -3,11 +3,11 @@ import React from "react"
 const IndustryWhatWeOffer = () => {
   return (
     <div className='px-6 md:px-24 py-10 font-primary'>
-      <h3 className='text-center md:text-left text-2xl md:text-5xl mb-6'>
+      <h3 className='text-center md:text-left text-2xl md:text-3xl xl:text-5xl mb-6'>
         What <strong>We Offer</strong>
       </h3>
 
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10'>
+      <div className='grid grid-cols-1 md:grid-cols-1 xl:grid-cols-3 gap-10'>
         <div className='card p-10'>
           <img
             src={require("../../../assets/img/Home/Services/Comperhensive.png")}

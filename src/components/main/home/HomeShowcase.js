@@ -21,7 +21,7 @@ const HomeShowcase = () => {
           <h1 className='text-3xl md:text-5xl xl:text-6xl md:mt-10 text-center md:text-left'>
             System <strong>Integrator</strong>
           </h1>
-          <p className='leading-loose hidden lg:block xl:block overflow-x-hidden '>
+          <p className='leading-loose hidden md:block xl:block overflow-x-hidden '>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
