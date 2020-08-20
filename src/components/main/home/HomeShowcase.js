@@ -17,11 +17,11 @@ const HomeShowcase = () => {
       >
         {/* Showcase Content */}
         <div className='z-10'>
-          <div className='hidden md:block w-32 bg-white h-2 border border-white mb-6'></div>
-          <h1 className='text-5xl md:text-6xl text-center md:text-left'>
+          <div className='hidden xl:block w-32 bg-white h-2 border border-white mb-6'></div>
+          <h1 className='text-3xl md:text-5xl xl:text-6xl md:mt-10 text-center md:text-left'>
             System <strong>Integrator</strong>
           </h1>
-          <p className='leading-loose hidden md:block'>
+          <p className='leading-loose hidden lg:block xl:block overflow-x-hidden '>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
             ad minim veniam.
@@ -29,7 +29,7 @@ const HomeShowcase = () => {
 
           {/* Buttons */}
           <div
-            className='hidden md:block relative mt-20'
+            className='hidden md:block relative md:mt-6 xl:mt-20'
             style={styles.btnShowcaseContainer}
           >
             <Link
@@ -56,7 +56,7 @@ const HomeShowcase = () => {
           {/* Scroll To Bottom */}
           <img
             src={MouseIcon}
-            className='hidden absolute bottom-0 md:block'
+            className='hidden absolute bottom-0 md:hidden lg:hidden xl:block'
             style={{
               left: "49%"
             }}

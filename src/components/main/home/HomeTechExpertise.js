@@ -4,15 +4,18 @@ import sliderSetting from "../../../utils/slider-setting"
 
 const TechExpertise = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary' id='tech-expertise'>
-      <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
+    <div
+      className='px-6 md:px-24 py-10 font-primary w-full'
+      id='tech-expertise'
+    >
+      <div className='xl:grid grid-cols-1 md:grid-cols-2 gap-5'>
         <div>
           {/* Header */}
-          <div className='flex flex-col md:flex-row items-center mb-6'>
-            <h3 className='text-center text-2xl md:text-5xl w-full md:w-7/12'>
+          <div className='flex flex-col md:flex-row items-center justify-center mb-6'>
+            <h3 className='text-center text-2xl md:text-5xl w-full xl:w-7/12'>
               Tech <strong>Expertise</strong>
             </h3>
-            <div className='border border-primary h-0  mx-4 flex relative justify-between items-center w-full md:w-5/12 mt-2'>
+            <div className='hidden xl:flex border border-primary h-0  mx-4 relative justify-between items-center w-full xl:w-5/12 mt-2'>
               <div
                 className='bg-primary rounded-full h-2 w-2 absolute'
                 style={{ left: "-1px" }}
@@ -58,7 +61,7 @@ const TechExpertise = () => {
           </div>
         </div>
 
-        <div className='hidden md:block'>
+        <div className='hidden md:hidden lg:hidden xl:block'>
           <img
             src={require("../../../assets/img/Home/TechExpertise/1.png")}
             alt='Tech Expertise'

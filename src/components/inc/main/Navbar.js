@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-50 fixed overflow-x-hidden overflow-scroll md:overflow-hidden bg-${
+      className={`w-full z-50 fixed overflow-x-hidden overflow-scroll xl:overflow-hidden bg-${
         scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
@@ -41,7 +41,7 @@ const Navbar = () => {
         </Link>
 
         <div
-          className='cursor-pointer burger md:hidden mr-2'
+          className='cursor-pointer burger block md:block lg:block xl:hidden mr-2'
           onClick={() => setToggleNav(!toggleNav)}
         >
           <div className={`${toggleNav ? "line-1" : ""}`}></div>
@@ -50,7 +50,9 @@ const Navbar = () => {
         </div>
 
         <ul
-          className={`md:flex ${toggleNav ? "nav-item text-lg" : "hidden"}`}
+          className={`md:hidden lg:hidden xl:flex ${
+            toggleNav ? "nav-item text-lg" : "hidden"
+          }`}
           style={toggleNav ? styles.navLinksResponsive : null}
         >
           <li

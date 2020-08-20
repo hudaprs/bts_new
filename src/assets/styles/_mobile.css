@@ -1,5 +1,10 @@
-/* Medium size */
-@media (max-width: 768px) {
+/* React Slick Package */
+.slick-slide div {
+  text-align: center;
+}
+
+/* All */
+@media (min-width: 0px) and (max-width: 640px) {
   /* Home - Services */
   #home-service {
     grid-template-areas:
@@ -64,13 +69,34 @@
     height: 150px !important;
   }
 
-  /* React Slick Package */
-  .slick-slide div {
-    text-align: center;
-  }
-
   /* Portfolio - Portfolio List */
   #select-input-portfolio {
     bottom: 0px !important;
+  }
+}
+
+/* Smartphones */
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Home - Services */
+  #home-service {
+    justify-content: center;
+  }
+
+  #home-service .services-title h3 {
+    font-size: 38px;
+  }
+
+  #home-service .home-service-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0 20px;
+    width: 200px;
+    height: 170px;
+  }
+
+  #home-service .home-service-logo {
+    margin: 0;
   }
 }

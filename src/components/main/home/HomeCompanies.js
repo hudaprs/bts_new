@@ -58,20 +58,20 @@ const HomeCompanies = () => {
       </p>
 
       {/* Companies Name */}
-      <div className='flex items-center justify-end mt-10'>
+      <div className='flex items-center justify-center xl:justify-end mt-10'>
         {/* Line */}
-        <div className='mr-2 rounded bg-primary border-primary border h-2 w-8 hidden md:block'></div>
-        <h5 className='text-sm md:text-xl font-secondary'>
+        <div className='mr-2 rounded bg-primary border-primary border h-2 w-8 hidden xl:block'></div>
+        <h5 className='text-sm text-center xl:text-xl font-secondary'>
           SALMA FONSECA, PT. INDO TAMBANGRAYA MEGAH
         </h5>
       </div>
 
       {/* Companies Leader */}
-      <div className='flex justify-center items-center mt-8 md:mt-16'>
+      <div className='flex justify-center text-center items-center mt-8 md:mt-16'>
         <img
           src={require("../../../assets/img/Home/Companies/Person1.png")}
           alt='Person1'
-          className='rounded-full ml-10 hidden md:block'
+          className='rounded-full hidden md:block'
           style={styles.companiesLeaderImg}
         />
         <img
