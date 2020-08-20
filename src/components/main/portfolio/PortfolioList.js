@@ -13,7 +13,7 @@ const PortfolioList = () => {
   return (
     <div className='px-6 md:px-24 py-10 font-primary'>
       {/* Forms */}
-      <form action='#' className='flex justify-center md:justify-start'>
+      <form action='#' className='flex justify-center xl:justify-start'>
         <div className='flex flex-col md:flex-row'>
           <div className='w-64 relative'>
             <img
@@ -49,7 +49,7 @@ const PortfolioList = () => {
       </form>
 
       {/* Portfolio List */}
-      <div className='grid grid-cols-1 md:grid-cols-3 gap-10 mt-8 mb-4 text-center md:text-left'>
+      <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-8 mb-4 text-center md:text-left'>
         <div className='blog-item'>
           <img src={LearningSystemImage} alt='Learning System' />
           <h6 className='text-xl font-default mt-4'>
