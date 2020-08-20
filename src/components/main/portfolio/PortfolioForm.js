@@ -2,7 +2,7 @@ import React from "react"
 
 const PortfolioForm = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='wrapper font-primary'>
       <h3 className='text-center md:text-left text-4xl md:text-5xl mb-8'>
         Start A <strong>Project</strong>
       </h3>

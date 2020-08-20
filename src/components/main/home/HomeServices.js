@@ -1,38 +1,56 @@
-import React from "react"
+import React, { useState } from "react"
 import { Link } from "react-router-dom"
 
+// Images
+import ComperhensiveImage from "../../../assets/img/Home/Services/Comperhensive.png"
+import CloudIntegrationImage from "../../../assets/img/Home/Services/Cloud.png"
+import ManagementImage from "../../../assets/img/Home/Services/Management.png"
+import Development from "../../../assets/img/Home/Services/Development.png"
+import DataImage from "../../../assets/img/Home/Services/Data.png"
+import TodoImage from "../../../assets/img/Home/Services/Todo.png"
+
 const HomeServices = () => {
+  const [services, setServices] = useState([
+    {
+      id: 1,
+      img: ComperhensiveImage,
+      title: "Comprehensive IT Manage Service"
+    },
+    {
+      id: 2,
+      img: CloudIntegrationImage,
+      title: "Cloud Integration"
+    },
+    {
+      id: 3,
+      img: ManagementImage,
+      title: "Management Consulting & Business Services"
+    },
+    {
+      id: 4,
+      img: Development,
+      title: "Web & Mobile Development"
+    },
+    {
+      id: 5,
+      img: DataImage,
+      title: "Business Intelligence, Big Data"
+    },
+    {
+      id: 6,
+      img: TodoImage,
+      title: "More than What Listed"
+    }
+  ])
+
   return (
-    <div
-      className='px-6 md:px-24 py-10 font-primary text-center overflow-hidden'
-      id='home-service'
-    >
-      <div className='home-service-box item-1'>
-        <img
-          src={require("../../../assets/img/Home/Services/Comperhensive.png")}
-          alt='Logo1'
-          className='home-service-logo'
-        />
-        <p>Comprehensive IT Manage Service</p>
-      </div>
-
-      <div className='home-service-box item-2'>
-        <img
-          src={require("../../../assets/img/Home/Services/Cloud.png")}
-          alt='Logo5'
-          className='home-service-logo'
-        />
-        <p>Cloud Integration</p>
-      </div>
-
-      <div className='home-service-box item-3'>
-        <img
-          src={require("../../../assets/img/Home/Services/Management.png")}
-          alt='Logo3'
-          className='home-service-logo'
-        />
-        <p>Management Consulting & Business Services</p>
-      </div>
+    <div className='wrapper font-primary text-center' id='home-service'>
+      {services.map((service, index) => (
+        <div className={`home-service-box item-${index + 1}`} key={service.id}>
+          <img src={service.img} alt='Logo1' className='home-service-logo' />
+          <p>{service.title}</p>
+        </div>
+      ))}
 
       <div className='services-title text-center' id='home-service-title'>
         <div>
@@ -46,33 +64,6 @@ const HomeServices = () => {
             Know More
           </Link>
         </div>
-      </div>
-
-      <div className='home-service-box item-4'>
-        <img
-          src={require("../../../assets/img/Home/Services/Development.png")}
-          alt='Logo4'
-          className='home-service-logo'
-        />
-        <p>Web & Mobile Development</p>
-      </div>
-
-      <div className='home-service-box item-5'>
-        <img
-          src={require("../../../assets/img/Home/Services/Data.png")}
-          alt='Logo5'
-          className='home-service-logo'
-        />
-        <p>Business Intelligence, Big Data</p>
-      </div>
-
-      <div className='home-service-box item-6'>
-        <img
-          src={require("../../../assets/img/Home/Services/Todo.png")}
-          alt='Logo6'
-          className='home-service-logo'
-        />
-        <p>More than What Listed</p>
       </div>
     </div>
   )

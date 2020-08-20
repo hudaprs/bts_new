@@ -6,7 +6,7 @@ import LinkedInIcon from "../../../assets/img/Footer/LinkedIn.png"
 
 const Footer = () => {
   return (
-    <footer className='px-6 md:px-24 py-10 bg-secondary font-primary'>
+    <footer className='wrapper bg-secondary font-primary'>
       <div className='flex justify-start mb-6'>
         <img
           src={require("../../../assets/img/Footer/BTSWhite.png")}

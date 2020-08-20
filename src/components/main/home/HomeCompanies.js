@@ -4,10 +4,7 @@ import sliderSetting from "../../../utils/slider-setting"
 
 const HomeCompanies = () => {
   return (
-    <div
-      className='px-6 md:px-24 text-center font-primary py-10'
-      id='companies'
-    >
+    <div className='wrapper text-center font-primary' id='companies'>
       <h3 className='text-center text-2xl md:text-5xl mb-4'>
         Companies We’ve <strong>Helped</strong>
       </h3>

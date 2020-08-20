@@ -6,13 +6,13 @@ import Blog3Image from "../../../assets/img/Home/Blog/Blog3.png"
 
 const HomeBlog = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary font-hairline' id='blog'>
+    <div className='wrapper font-primary font-hairline' id='blog'>
       {/* Header */}
       <div className='flex flex-col md:flex-row justify-center items-center mb-6'>
-        <h3 className='text-center text-3xl md:text-5xl xl:w-8/12 xl:text-left'>
+        <h3 className='text-center text-3xl md:text-5xl xl:w-auto xl:text-left'>
           Our Latest <strong>Blog Post</strong>
         </h3>
-        <div className='hidden xl:flex xl:justify-between border border-primary h-0  mx-4 relative  items-center w-full md:w-full mr-2 mt-2'>
+        <div className='hidden xl:flex xl:justify-between border border-primary h-0  mx-4 relative  items-center w-full xl:w-7/12 mr-2 mt-2'>
           <div
             className='bg-primary rounded-full h-2 w-2 absolute'
             style={{ left: "-1px" }}

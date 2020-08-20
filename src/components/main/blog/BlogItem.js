@@ -6,7 +6,7 @@ import BlogRecentArticle from "./BlogRecentArticle"
 
 const BlogItem = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='wrapper font-primary'>
       <h3 className='text-center xl:text-left text-4xl md:text-5xl mb-6'>
         Our <strong>Article</strong>
       </h3>

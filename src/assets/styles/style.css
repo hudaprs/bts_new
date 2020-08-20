@@ -22,6 +22,12 @@ body {
   color: #fff;
 }
 
+/* wrapper */
+.wrapper {
+  @apply px-6;
+  @apply py-10;
+}
+
 /* Navbar */
 .current {
   @apply border-b-2;
@@ -156,6 +162,11 @@ body {
 
 /* Screen Medium */
 @screen md {
+  /* Wrapper */
+  .wrapper {
+    @apply px-24;
+  }
+
   /* Showcase */
   .showcase .showcase-container {
     @apply grid grid-cols-2 px-32;

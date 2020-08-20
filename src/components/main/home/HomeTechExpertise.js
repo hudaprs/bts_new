@@ -4,10 +4,7 @@ import sliderSetting from "../../../utils/slider-setting"
 
 const TechExpertise = () => {
   return (
-    <div
-      className='px-6 md:px-24 py-10 font-primary w-full'
-      id='tech-expertise'
-    >
+    <div className='wrapper font-primary w-full' id='tech-expertise'>
       <div className='xl:grid grid-cols-1 md:grid-cols-2 gap-5'>
         <div>
           {/* Header */}

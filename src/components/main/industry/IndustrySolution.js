@@ -4,7 +4,7 @@ import IndustrySolutionImage from "../../../assets/img/Industry/Solution.png"
 
 const IndustrySolution = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='wrapper font-primary'>
       <div className='grid grid-cols-1 md:grid-cols-2 items-center justify-center gap-10'>
         <div>
           <h3 className='text-center md:text-left text-2xl md:text-3xl xl:text-5xl w-full mb-6	'>

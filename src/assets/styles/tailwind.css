@@ -18630,6 +18630,15 @@ body {
   color: #fff;
 }
 
+/* wrapper */
+
+.wrapper {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
 /* Navbar */
 
 .current {
@@ -18805,6 +18814,13 @@ body {
 /* Screen Medium */
 
 @media (min-width: 768px) {
+  /* Wrapper */
+
+  .wrapper {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   /* Showcase */
 
   .showcase .showcase-container {

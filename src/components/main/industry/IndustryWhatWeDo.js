@@ -3,7 +3,7 @@ import IndustryWhatWeDoImage from "../../../assets/img/Industry/WhatWeDo.png"
 
 const IndustryWhatWeDo = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary hidden md:block'>
+    <div className='wrapper font-primary hidden md:block'>
       <h3 className='text-center md:text-left text-2xl md:text-3xl xl:text-5xl mb-6'>
         What <strong>We Do</strong>
       </h3>
@@ -38,7 +38,7 @@ const IndustryWhatWeDo = () => {
         </div>
 
         <div className='flex flex-col justify-around items-center'>
-          <h3 className='text-center md:text-left text-2xl md:text-3xl xl:text-5xl w-full'>
+          <h3 className='text-center md:text-left text-2xl md:text-3xl xl:text-5xl w-full xl:mb-16'>
             About <strong>Manufacturing</strong>
           </h3>
 

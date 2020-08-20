@@ -2,7 +2,7 @@ import React from "react"
 
 const ServiceFeaturedService = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='wrapper font-primary'>
       <h3 className='text-center text-2xl md:text-5xl mb-8'>
         Featured <strong>Service</strong>
       </h3>

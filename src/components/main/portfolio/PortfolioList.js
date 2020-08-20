@@ -1,5 +1,8 @@
 import React from "react"
 
+// Components
+import PortfolioListForm from "./PortfolioListForm"
+
 // Images
 import LearningSystemImage from "../../../assets/img/Portfolio/LearningSystem.png"
 import POSImage from "../../../assets/img/Portfolio/POS.png"
@@ -7,46 +10,12 @@ import MaintenanceImage from "../../../assets/img/Portfolio/Maintenance.png"
 import AssetTrackerImage from "../../../assets/img/Portfolio/AssetTracker.png"
 import ECommerceImage from "../../../assets/img/Portfolio/ECommerce.png"
 import SalesForceAutomationImage from "../../../assets/img/Portfolio/SalesForceAutomation.png"
-import SearchIcon from "../../../assets/img/Portfolio/SearchIcon.svg"
 
 const PortfolioList = () => {
   return (
-    <div className='px-6 md:px-24 py-10 font-primary'>
+    <div className='wrapper font-primary'>
       {/* Forms */}
-      <form action='#' className='flex justify-center xl:justify-start'>
-        <div className='flex flex-col md:flex-row'>
-          <div className='w-64 relative'>
-            <img
-              src={SearchIcon}
-              alt='Search'
-              className='absolute'
-              style={{ left: "10px", top: "5px" }}
-            />
-            <input
-              className='border border-gray-200 w-full rounded px-10 py-2 leading-tight mb-4'
-              id='grid-last-name'
-              type='text'
-              placeholder='Search'
-            />
-          </div>
-          <div className='inline-block relative w-64 md:ml-8'>
-            <select className='block appearance-none w-full bg-white border border-gray-400 hover:border-gray-500 px-4 py-2 pr-8 rounded shadow leading-tight focus:outline-none focus:shadow-outline'>
-              <option value='' defaultValue>
-                Select Industries
-              </option>
-              <option>Option 2</option>
-              <option>Option 3</option>
-            </select>
-            <div
-              className='pointer-events-none absolute top-0 right-0 flex items-center px-2 text-gray-700'
-              style={{ bottom: "15px" }}
-              id='select-input-portfolio'
-            >
-              <div className='fas fa-chevron-down text-primary'></div>
-            </div>
-          </div>
-        </div>
-      </form>
+      <PortfolioListForm />
 
       {/* Portfolio List */}
       <div className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-10 mt-8 mb-4 text-center md:text-left'>
