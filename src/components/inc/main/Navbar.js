@@ -26,7 +26,7 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-20 fixed xl:overflow-x-hidden xl:overflow-y-hidden overflow-y-scroll bg-${
+      className={`w-full z-20 overflow-y-auto xl:overflow-visible fixed bg-${
         scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
@@ -91,7 +91,7 @@ const Navbar = () => {
             <Link to='/blog'>Blog</Link>
           </li>
           <li
-            className={`ml-16 ${
+            className={`md: ml-16 ${
               location.includes("companies") ? "current" : ""
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
@@ -115,7 +115,7 @@ const Navbar = () => {
             </div>
           </li>
           <li
-            className={`ml-16 hidden xl:block ${
+            className={`hidden xl:block ml-16 ${
               location === "search" ? "current" : ""
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
