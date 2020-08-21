@@ -26,12 +26,15 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`w-full z-50 fixed overflow-x-hidden overflow-scroll xl:overflow-hidden bg-${
+      className={`w-full z-20 fixed xl:overflow-x-hidden xl:overflow-y-hidden overflow-y-scroll bg-${
         scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
-      <div className='px-6 md:px-32 pt-6 m-auto flex justify-between items-center'>
+      <div
+        className='px-6 md:px-32 pt-6 m-auto flex justify-between items-center'
+        id='navbar'
+      >
         <Link to='/' className='cursor-pointer'>
           <img
             src={require("../../../assets/img/Navbar/NavbarLogo.png")}
@@ -93,18 +96,32 @@ const Navbar = () => {
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
-            <Link to='#!'>Companies</Link>
+            <div className='z-30 companies-dropdown'>
+              <button className='cursor-pointer'>
+                Companies{" "}
+                <em className='fas fa-caret-down text-primary ml-1'></em>
+              </button>
+              <ul className='companies-dropdown-group'>
+                <li>
+                  <Link to='#!'>Option 1</Link>
+                </li>
+                <li>
+                  <Link to='#!'>Option 2</Link>
+                </li>
+                <li>
+                  <Link to='#!'>Option 3</Link>
+                </li>
+              </ul>
+            </div>
           </li>
           <li
-            className={`ml-16 ${location === "search" ? "current" : ""} p-2`}
+            className={`ml-16 hidden xl:block ${
+              location === "search" ? "current" : ""
+            } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
             <Link to='#!'>
-              <img
-                src={NavbarSearchIcon}
-                alt='NavbarSearch'
-                className='content-center'
-              />
+              <img src={NavbarSearchIcon} alt='NavbarSearch' />
             </Link>
           </li>
         </ul>
