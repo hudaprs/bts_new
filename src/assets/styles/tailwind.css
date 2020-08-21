@@ -18683,8 +18683,8 @@ body {
 }
 
 .showcase .showcase-title {
-  font-size: 1.5rem;
   text-align: center;
+  font-size: 3rem;
 }
 
 .showcase .showcase-content {
@@ -18831,7 +18831,7 @@ body {
   }
 
   .showcase .showcase-title {
-    font-size: 1.875rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
     text-align: left;
   }
@@ -18841,19 +18841,24 @@ body {
   }
 
   .showcase .showcase-text {
-    display: block;
+    display: none;
   }
 
   .showcase .showcase-left-line {
-    display: block;
-    height: 3rem;
+    display: none;
   }
 }
 
 /* Screen Large */
 
 @media (min-width: 1024px) {
-  .showcase .showcase-text {
+  .showcase .showcase-title {
+    text-align: left;
+    font-size: 1.875rem;
+  }
+
+  .showcase .showcase-text,
+  .showcase .showcase-left-line {
     display: block;
   }
 }

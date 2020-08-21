@@ -17,7 +17,7 @@ const ServiceShowcase = () => {
               <h1 className='showcase-title'>
                 <strong>Services</strong>
               </h1>
-              <p className='leading-loose hidden text-sm xl:text-base md:block lg:block xl:block overflow-x-hidden'>
+              <p className='showcase-text'>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do
                 eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
                 enim ad minim veniam.

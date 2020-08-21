@@ -65,8 +65,8 @@ body {
 }
 
 .showcase .showcase-title {
-  @apply text-2xl;
   @apply text-center;
+  @apply text-5xl;
 }
 
 .showcase .showcase-content {
@@ -173,7 +173,7 @@ body {
   }
 
   .showcase .showcase-title {
-    @apply text-3xl mb-4 text-left;
+    @apply text-5xl mb-4 text-left;
   }
 
   .showcase .showcase-content {
@@ -181,17 +181,22 @@ body {
   }
 
   .showcase .showcase-text {
-    @apply block;
+    @apply hidden;
   }
 
   .showcase .showcase-left-line {
-    @apply block h-12;
+    @apply hidden;
   }
 }
 
 /* Screen Large */
 @screen lg {
-  .showcase .showcase-text {
+  .showcase .showcase-title {
+    @apply text-left text-3xl;
+  }
+
+  .showcase .showcase-text,
+  .showcase .showcase-left-line {
     @apply block;
   }
 }

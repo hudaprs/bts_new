@@ -54,7 +54,7 @@ const HomeServices = () => {
 
       <div className='services-title text-center' id='home-service-title'>
         <div>
-          <h3 className='text-3xl md:text-5xl mb-4'>
+          <h3 className='text-3xl xl:text-5xl mb-4'>
             Our <strong>Services</strong>
           </h3>
           <Link
