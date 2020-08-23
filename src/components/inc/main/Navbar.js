@@ -1,11 +1,11 @@
-import React, { useState, useEffect } from "react"
-import { Link } from "react-router-dom"
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom'
 
 // Images
-import NavbarSearchIcon from "../../../assets/img/Navbar/NavbarSearchIcon.png"
+import NavbarSearchIcon from '../../../assets/img/Navbar/NavbarSearchIcon.png'
 
 const Navbar = () => {
-  const location = window.location.href.split("/")[3]
+  const location = window.location.href.split('/')[3]
   const [toggleNav, setToggleNav] = useState(false)
   const [scrolled, setScrolled] = useState(false)
 
@@ -19,15 +19,15 @@ const Navbar = () => {
   }
 
   useEffect(() => {
-    window.addEventListener("scroll", onScroll)
+    window.addEventListener('scroll', onScroll)
 
-    return () => window.removeEventListener("scroll", onScroll)
+    return () => window.removeEventListener('scroll', onScroll)
   })
 
   return (
     <nav
       className={`w-full z-20 overflow-y-auto xl:overflow-visible fixed bg-${
-        scrolled || toggleNav ? "dark-with-opacity" : "dark-transparent"
+        scrolled || toggleNav ? 'dark-with-opacity' : 'dark-transparent'
       } text-white text-sm font-default font-hairline`}
       style={toggleNav ? styles.navbarResponsive : styles.navbar}
     >
@@ -37,7 +37,7 @@ const Navbar = () => {
       >
         <Link to='/' className='cursor-pointer'>
           <img
-            src={require("../../../assets/img/Navbar/NavbarLogo.png")}
+            src={require('../../../assets/img/Navbar/NavbarLogo.png')}
             alt='BTS.id'
             style={styles.navbarLogo}
           />
@@ -47,28 +47,28 @@ const Navbar = () => {
           className='cursor-pointer burger block md:block lg:block xl:hidden mr-2'
           onClick={() => setToggleNav(!toggleNav)}
         >
-          <div className={`${toggleNav ? "line-1" : ""}`}></div>
-          <div className={`${toggleNav ? "line-2" : ""}`}></div>
-          <div className={`${toggleNav ? "line-3" : ""}`}></div>
+          <div className={`${toggleNav ? 'line-1' : ''}`}></div>
+          <div className={`${toggleNav ? 'line-2' : ''}`}></div>
+          <div className={`${toggleNav ? 'line-3' : ''}`}></div>
         </div>
 
         <ul
           className={`md:hidden lg:hidden xl:flex ${
-            toggleNav ? "nav-item text-lg" : "hidden"
+            toggleNav ? 'nav-item text-lg' : 'hidden'
           }`}
           style={toggleNav ? styles.navLinksResponsive : null}
         >
           <li
             className={`ml-16 ${
-              location.includes("services") ? "current" : ""
+              location.includes('services') ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
-            <Link to='/services'>Services</Link>
+            <Link to='/services#service-showcase'>Services</Link>
           </li>
           <li
             className={`ml-16 ${
-              location.includes("industries") ? "current" : ""
+              location.includes('industries') ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
@@ -76,7 +76,7 @@ const Navbar = () => {
           </li>
           <li
             className={`ml-16 ${
-              location.includes("portfolios") ? "current" : ""
+              location.includes('portfolios') ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
@@ -84,7 +84,7 @@ const Navbar = () => {
           </li>
           <li
             className={`ml-16 ${
-              location.includes("blog") ? "current" : ""
+              location.includes('blog') ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
@@ -92,13 +92,13 @@ const Navbar = () => {
           </li>
           <li
             className={`md: ml-16 ${
-              location.includes("companies") ? "current" : ""
+              location.includes('companies') ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
             <div className='z-30 companies-dropdown'>
               <button className='cursor-pointer'>
-                Companies{" "}
+                Companies{' '}
                 <em className='fas fa-caret-down text-primary ml-1'></em>
               </button>
               <ul className='companies-dropdown-group'>
@@ -116,7 +116,7 @@ const Navbar = () => {
           </li>
           <li
             className={`hidden xl:block ml-16 ${
-              location === "search" ? "current" : ""
+              location === 'search' ? 'current' : ''
             } p-2`}
             style={toggleNav ? styles.navLinksItem : null}
           >
@@ -132,30 +132,30 @@ const Navbar = () => {
 
 const styles = {
   navbar: {
-    transition: ".5s",
-    height: "90px"
+    transition: '.5s',
+    height: '90px'
   },
   navbarResponsive: {
-    height: "100vh",
-    transition: ".5s"
+    height: '100vh',
+    transition: '.5s'
   },
   navbarLogo: {
-    width: "120px",
-    height: "38px"
+    width: '120px',
+    height: '38px'
   },
   navLinksResponsive: {
-    position: "absolute",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-    top: "70px",
-    right: "27px",
-    transition: " 0.5s",
-    width: "100%"
+    position: 'absolute',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    top: '70px',
+    right: '27px',
+    transition: ' 0.5s',
+    width: '100%'
   },
   navLinksItem: {
-    marginTop: "10px",
-    marginBottom: "20px"
+    marginTop: '10px',
+    marginBottom: '20px'
   }
 }
 

@@ -1,11 +1,11 @@
-import React from "react"
+import React from 'react'
 
 // Images
-import ServiceShowcaseImage from "../../../assets/img/Service/Service.png"
+import ServiceShowcaseImage from '../../../assets/img/Service/Service.png'
 
 const ServiceShowcase = () => {
   return (
-    <div className='showcase' style={styles.showcase}>
+    <div className='showcase' style={styles.showcase} id='service-showcase'>
       {/* Showcase Container */}
       <div className='showcase-container'>
         {/* Showcase Content */}

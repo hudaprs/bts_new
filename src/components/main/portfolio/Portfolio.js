@@ -1,14 +1,15 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
 
 // Components
-import MainLayout from "../../layouts/MainLayout"
-import PortfolioShowcase from "./PortfoloioShowcase"
-import PortfolioList from "./PortfolioList"
-import PortfolioForm from "./PortfolioForm"
+import MainLayout from '../../layouts/MainLayout'
+import PortfolioShowcase from './PortfoloioShowcase'
+import PortfolioList from './PortfolioList'
+import PortfolioForm from './PortfolioForm'
 
 const Portfolio = () => {
   useEffect(() => {
-    document.title = "BTS.id - Portfolios"
+    document.title = 'BTS.id - Portfolios'
+    window.scrollTo(0, 0)
   }, [])
 
   return (

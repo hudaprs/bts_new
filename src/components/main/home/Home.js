@@ -1,16 +1,17 @@
-import React, { useEffect } from "react"
+import React, { useEffect } from 'react'
 
 // Components
-import MainLayout from "../../layouts/MainLayout"
-import HomeShowcase from "./HomeShowcase"
-import HomeServices from "./HomeServices"
-import HomeTechExpertise from "./HomeTechExpertise"
-import HomeCompanies from "./HomeCompanies"
-import HomeBlog from "./HomeBlog"
+import MainLayout from '../../layouts/MainLayout'
+import HomeShowcase from './HomeShowcase'
+import HomeServices from './HomeServices'
+import HomeTechExpertise from './HomeTechExpertise'
+import HomeCompanies from './HomeCompanies'
+import HomeBlog from './HomeBlog'
 
 const Home = () => {
   useEffect(() => {
-    document.title = "BTS.id - Home"
+    document.title = 'BTS.id - Home'
+    window.scrollTo(0, 0)
   }, [])
 
   return (
